@@ -9,8 +9,11 @@ FROM php:7.2-fpm
      mv composer.phar /usr/local/bin/composer
 
  WORKDIR /app/src
- COPY ./sample .
- RUN composer install
+ COPY ./sample/composer.* .
+ RUN mkdir -p ./datase/seeds && mkdir -p ./database/factories && \
+     composer install
 
- CMD ["php", "artisan", "serve", "--host", "0.0.0.0"]
+ COPY ./sample .
+
+ CMD ["/app/src/entrypoint.sh"]
 

@@ -1,9 +1,9 @@
 <template>
-  <div class="container">
+  <section class="container">
     <div>
       <logo />
       <h1 class="title">
-        nuxtpj
+        changed nuxtpj
       </h1>
       <h2 class="subtitle">
         sample nuxt.js project
@@ -13,19 +13,15 @@
           href="https://nuxtjs.org/"
           target="_blank"
           class="button--green"
-        >
-          Documentation
-        </a>
+        >Documentation</a>
         <a
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
           class="button--grey"
-        >
-          GitHub
-        </a>
+        >GitHub</a>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
